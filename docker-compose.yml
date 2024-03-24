@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  flask-api:
+    build: ./flask
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./flask:/app
+
+  # django-app:
+  #   build: ./django
+  #   ports:
+  #     - "8080:8000"
+  #   volumes:
+  #     - ./django:/app
+
+
+  # react-frontend:
+  #   build: ./react
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - ./react:/app
+
+  # nodejs-backend:
+  #   build: ./nodejs
+  #   ports:
+  #     - "8000:8000"
+  #   volumes:
+  #     - ./nodejs:/app
